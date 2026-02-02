@@ -7,8 +7,8 @@ st.set_page_config(page_title="FloatX AI Assistant", page_icon="💎")
 # 侧边栏
 with st.sidebar:
     st.header("当前市场热度")
-    st.metric(label="OpenAI", value="$145.20", delta="+5.2%")
-    st.metric(label="SpaceX", value="$98.50", delta="+1.1%")
+    st.metric(label="OpenAI", value="\$145.20", delta="+5.2%")
+    st.metric(label="SpaceX", value="\$98.50", delta="+1.1%")
     st.info("💡 提示：这是一个 Demo，目前使用关键词匹配逻辑。请尝试问 '投资流程'、'Blockchain' 或 'Difference'。")
 
 # --- 2. 标题 ---
@@ -45,7 +45,7 @@ if prompt := st.chat_input():
         response = """
         **FloatX vs. Traditional Platforms (区别):**
 
-        1.  **Lower Entry (低门槛)**: We allow investment starting from **$1,000**, unlike the typical $100k+.
+        1.  **Lower Entry (低门槛)**: We allow investment starting from **1,000**, unlike the typical 100k+.
         2.  **Instant Settlement (T+0)**: Blockchain enables instant ownership transfer, no weeks of paperwork.
         3.  **Liquidity (流动性)**: You can sell fractional shares anytime on our marketplace.
         """
@@ -57,7 +57,7 @@ if prompt := st.chat_input():
 
         We use blockchain not for hype, but for **efficiency**:
         * **Transparency**: Your ownership is recorded on a distributed ledger, immutable and visible.
-        * **Fractionalization**: It allows us to split a $10M stock block into $100 tokens.
+        * **Fractionalization**: It allows us to split a \$10M stock block into \$100 tokens.
         * **Automation**: Smart contracts handle compliance and settlement automatically.
         """
 
@@ -77,8 +77,8 @@ if prompt := st.chat_input():
         response = """
         **Market Opportunity:**
 
-        * **SpaceX**: Trading around $98.50. High demand.
-        * **OpenAI**: Trading around $145.20. Limited supply.
+        * **SpaceX**: Trading around \$98.50. High demand.
+        * **OpenAI**: Trading around \$145.20. Limited supply.
 
         👉 **[Click here to View Live Order Book](#)**
         """
